@@ -1,3 +1,18 @@
 body {
-    background-color: navy
+    background-color: tan;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    position: relative;
+}
+
+img {
+    width: 600px;
+    height: 600px;
+    border-radius: 2rem;
+    border: 3.5px solid black;
 }
