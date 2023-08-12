@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UserFax</title>
+    <title>Document</title>
     <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
 </head>
 <body>
+    <h1>UserFax</h1>
+    {% for fact in facts %}
+    <p>
+        <quote> {{ fact.fact }} </quote>
+            {{fact.submitter}}
+    </p>
+    {% endfor %}
     
 </body>
 </html>
